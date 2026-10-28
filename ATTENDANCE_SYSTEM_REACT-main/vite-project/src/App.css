@@ -1,0 +1,280 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.app {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 16px;
+}
+
+header {
+  margin-bottom: 24px;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 4px;
+  background: #1769aa;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #12568d;
+}
+
+.form-section {
+  margin-top: 20px;
+  padding: 16px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 9px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+form button {
+  justify-self: start;
+}
+
+.success-message {
+  margin-top: 16px;
+  color: #167d35;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  margin-top: 14px;
+  border-collapse: collapse;
+  background: white;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background: #e9edf2;
+}
+
+@media (max-width: 600px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  .app {
+    margin-top: 16px;
+  }
+
+  table {
+    font-size: 13px;
+  }
+
+  th,
+  td {
+    padding: 7px;
+  }
+}
+
+/* Assignment upload popup */
+.assignment-modal {
+  width: min(600px, 100%);
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Use a single-column upload form */
+.assignment-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.assignment-form input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+.assignment-form button {
+  justify-self: start;
+}
+
+.assignment-message {
+  margin-top: 16px;
+  color: #176b32;
+  overflow-wrap: anywhere;
+}
+
+.assignment-list {
+  margin-top: 20px;
+  padding-top: 12px;
+  border-top: 1px solid #ddd;
+}
+
+.assignment-list li {
+  margin-bottom: 8px;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .assignment-modal {
+    padding: 14px;
+  }
+}
+
+/* Basic Student Dashboard */
+.student-dashboard {
+  margin-top: 20px;
+}
+
+.student-selector-section,
+.student-profile {
+  margin-top: 20px;
+  padding: 16px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.student-selector-section label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.student-selector-section select {
+  max-width: 400px;
+}
+
+.student-profile p {
+  margin: 10px 0;
+}
+
+/* Buttons for student features */
+.student-dashboard-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .student-selector-section,
+  .student-profile {
+    padding: 12px;
+  }
+
+  .student-dashboard-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Student attendance options */
+.student-attendance-options {
+  margin-top: 20px;
+  padding: 16px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.student-attendance-options h3 {
+  margin-bottom: 10px;
+}
+
+.student-attendance-options p {
+  margin-bottom: 14px;
+}
+
+@media (max-width: 600px) {
+  .student-attendance-options {
+    padding: 12px;
+  }
+}
+
+/* Student assignments */
+.student-assignment-options {
+  margin-top: 20px;
+  padding: 16px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.student-assignment-options h3 {
+  margin-bottom: 12px;
+}
+
+.student-assignment-options li {
+  margin-bottom: 12px;
+  overflow-wrap: anywhere;
+}
+
+.student-assignment-options a {
+  color: #1769aa;
+}
+
+.assignment-note {
+  margin-top: 16px;
+  color: #666;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .student-assignment-options {
+    padding: 12px;
+  }
+}
+
+
